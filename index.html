@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confeitaria Dona Borboleta</title>
+  <meta name="description" content="Confeitaria Dona Borboleta — bolos, docinhos, cestas e Festival de Fatias.">
+  <title>Confeitaria Dona Borboleta | Trabalho acadêmico</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topo">
-    <div class="marca">
-      <img src="imagens/logo-dona-borboleta.png" alt="Dona Borboleta — Confeitaria Artesanal">
-    </div>
-    <div class="autora">
-      <small>Trabalho acadêmico</small>
+  <div class="borboletas" aria-hidden="true">
+    <img src="imagens/borboleta.png" alt="">
+    <img src="imagens/borboleta.png" alt="">
+    <img src="imagens/borboleta.png" alt="">
+  </div>
+
+  <header class="cabecalho">
+    <a class="logo-link" href="#inicio" aria-label="Voltar ao início">
+      <img class="logo" src="imagens/logo-dona-borboleta.png" alt="Dona Borboleta — Confeitaria Artesanal">
+    </a>
+    <div class="identificacao">
+      <span>Trabalho acadêmico</span>
       <strong>Vitória Bezerra Ferreira</strong>
     </div>
-    <nav>
-      <a href="#sobre">Sobre</a>
+    <nav class="navegacao" aria-label="Navegação principal">
+      <a href="#historia">Nossa história</a>
       <a href="#cardapio">Cardápio</a>
       <a href="#festival">Festival de Fatias</a>
       <a href="#contato">Contato</a>
@@ -24,72 +31,91 @@
   </header>
 
   <main>
-    <section class="inicio" id="inicio">
-      <div class="texto-inicio">
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
         <p class="etiqueta">Doces feitos para ficar na memória</p>
-        <h1>Um pedacinho de <span>carinho</span> em cada fatia.</h1>
-        <p>Bolos, docinhos e cestas preparados à mão para transformar encontros simples em lembranças deliciosas.</p>
-        <a class="botao" href="#cardapio">Conheça o cardápio</a>
+        <h1>Um pedacinho de <em>carinho</em> em cada fatia.</h1>
+        <p class="descricao">Bolos, docinhos e cestas preparados à mão para transformar encontros simples em lembranças deliciosas.</p>
+        <div class="botoes">
+          <a class="botao botao-rosa" href="#cardapio">Conhecer o cardápio</a>
+          <a class="botao botao-link" href="#contato">Fazer uma encomenda</a>
+        </div>
       </div>
-      <img class="foto-principal" src="imagens/bolo-principal.jpeg" alt="Bolo rosa decorado">
+      <div class="hero-imagem">
+        <img src="imagens/bolo-principal.jpeg" alt="Bolo rosa decorado da Confeitaria Dona Borboleta">
+      </div>
     </section>
 
-    <section class="sobre" id="sobre">
+    <section class="introducao" id="historia">
       <div>
-        <p class="etiqueta">Nossa história</p>
+        <p class="etiqueta">Uma cozinha pequena, um carinho enorme</p>
         <h2>Receitas para celebrar os dias bonitos.</h2>
       </div>
-      <p>A Confeitaria Dona Borboleta é responsabilidade de <strong>Íris Valéria</strong>, confeiteira que prepara cada encomenda com cuidado, criatividade e sabor.</p>
+      <p>À frente da Confeitaria Dona Borboleta está Íris Valéria, confeiteira responsável por transformar ingredientes simples em bolos, docinhos e presentes preparados com cuidado.</p>
     </section>
 
     <section class="secao" id="cardapio">
-      <p class="etiqueta">Escolha uma receita</p>
-      <h2>Cardápio da casa</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="imagens/bolo-flores.jpeg" alt="Bolo de festa decorado com flores">
-          <h3>Bolos de festa</h3>
-          <p>Decorações especiais para aniversários e comemorações.</p>
+      <div class="titulo-secao">
+        <div>
+          <p class="etiqueta">Escolha uma receita</p>
+          <h2>Cardápio da casa</h2>
+        </div>
+        <p>Opções para aniversários, encontros, presentes e pequenas comemorações.</p>
+      </div>
+      <div class="lista-produtos">
+        <article class="produto">
+          <img src="imagens/bolo-flores.jpeg" alt="Bolo branco decorado com flores">
+          <div><span>01</span><h3>Bolos de festa</h3><p>Decorações pensadas para combinar com cada comemoração.</p></div>
         </article>
-        <article class="card">
+        <article class="produto">
           <img src="imagens/docinhos.jpeg" alt="Docinhos de chocolate decorados">
-          <h3>Docinhos</h3>
-          <p>Brigadeiros, beijinhos e opções para dividir ou presentear.</p>
+          <div><span>02</span><h3>Docinhos</h3><p>Brigadeiros, beijinhos e combinações para dividir ou presentear.</p></div>
         </article>
-        <article class="card">
-          <img src="imagens/cesta.jpeg" alt="Cesta de café da manhã">
-          <h3>Cestas afetivas</h3>
-          <p>Presentes montados para demonstrar carinho em qualquer ocasião.</p>
+        <article class="produto">
+          <img src="imagens/cesta.jpeg" alt="Cesta de café da manhã e presentes">
+          <div><span>03</span><h3>Cestas afetivas</h3><p>Um jeito especial de mandar carinho para alguém.</p></div>
         </article>
       </div>
     </section>
 
     <section class="festival" id="festival">
-      <div>
+      <div class="festival-texto">
         <p class="etiqueta">Produto em destaque</p>
-        <h2>Festival de <span>Fatias</span></h2>
-        <p>Uma seleção de sabores para experimentar, escolher o seu favorito e voltar para provar outro.</p>
-        <a class="botao" href="https://wa.me/5511982392182" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+        <h2>Festival de <em>Fatias</em></h2>
+        <p>Uma seleção de sabores feitos para experimentar aos poucos, escolher o seu favorito e voltar para provar outro.</p>
+        <a class="botao botao-rosa" href="https://wa.me/5511982392182" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
       </div>
-      <div class="fotos-festival">
-        <img src="imagens/festival-morango.jpeg" alt="Fatia de bolo com morango e creme">
+      <div class="festival-fotos">
+        <img src="imagens/festival-morango.jpeg" alt="Fatia de bolo com morangos e creme">
         <img src="imagens/festival-chocolate.jpeg" alt="Fatia de bolo de chocolate com brigadeiros">
       </div>
     </section>
 
+    <section class="processo">
+      <div>
+        <p class="etiqueta">Feito à mão</p>
+        <h2>O cuidado aparece em cada corte.</h2>
+      </div>
+      <div class="cortes">
+        <img src="imagens/corte-fatia.jpeg" alt="Fatia de bolo com recheio claro">
+        <img src="imagens/corte-chocolate.jpeg" alt="Fatia de bolo de chocolate com morango">
+        <img src="imagens/corte-maracuja.jpeg" alt="Corte de bolo recheado">
+      </div>
+    </section>
+
     <section class="contato" id="contato">
-      <p class="etiqueta">Faça sua encomenda</p>
+      <p class="etiqueta">Vamos conversar?</p>
       <h2>Seu próximo doce pode começar com uma mensagem.</h2>
-      <p><strong>Íris Valéria</strong> — responsável pela Confeitaria Dona Borboleta</p>
-      <div class="links">
+      <div class="contato-dados">
+        <p><strong>Íris Valéria</strong><br>Responsável pela Confeitaria Dona Borboleta</p>
         <a href="tel:+5511982392182">(11) 98239-2182</a>
         <a href="https://www.instagram.com/confeitariadonaborboleta?igsi=MW13anZ3eHphYWs4bA==" target="_blank" rel="noopener">@confeitariadonaborboleta</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <img src="imagens/logo-dona-borboleta.png" alt="Dona Borboleta — Confeitaria Artesanal">
+  <footer class="rodape">
+    <img class="logo logo-rodape" src="imagens/logo-dona-borboleta.png" alt="Dona Borboleta — Confeitaria Artesanal">
     <p>Trabalho acadêmico de Vitória Bezerra Ferreira</p>
   </footer>
 </body>
